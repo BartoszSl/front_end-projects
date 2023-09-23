@@ -1,0 +1,17 @@
+@import '../Assets/colors.scss';
+
+.end-time {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.time-value {
+    font-size: 2em;
+	color: $content-color;
+}
+
+.inform-text {
+	color: $content-shadow;
+}

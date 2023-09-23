@@ -1,0 +1,67 @@
+@import '../Assets/colors.scss';
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+	position: relative;
+	height: 15rem;
+	width: 15rem;
+	cursor: pointer;
+	&::after {
+		font-family: 'Font Awesome 5 Free';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 5rem;
+		color: #fff;
+		border-radius: 50%;
+	}
+}
+
+#cell2 {
+	border-left: 0.5rem solid $border-color;
+	border-right: 0.5rem solid $border-color;
+}
+
+#cell4 {
+	border-top: 0.5rem solid $border-color;
+	border-bottom: 0.5rem solid $border-color;
+}
+
+#cell5 {
+	border: 0.5rem solid $border-color;
+}
+
+#cell6 {
+	border-top: 0.5rem solid $border-color;
+	border-bottom: 0.5rem solid $border-color;
+}
+
+#cell8 {
+	border-left: 0.5rem solid $border-color;
+	border-right: 0.5rem solid $border-color;
+}
+
+.circle {
+	position: relative;
+	&::after {
+		content: '\f111';
+		font-weight: 400;
+		padding: 2rem;
+		background-color: $green;
+	}
+}
+
+.cross {
+	position: relative;
+	&::after {
+		content: '\f00d';
+		font-weight: 900;
+		padding: 2rem 2.5rem;
+		background-color: $red;
+	}
+}
